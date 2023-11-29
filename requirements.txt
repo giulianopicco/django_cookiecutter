@@ -1,0 +1,22 @@
+# Django
+Django==4.2.2
+
+# Django-filters
+django-filter==23.2
+
+# Decouple
+python-decouple==3.8
+
+# Pillow 
+Pillow==9.5.0
+
+{% if cookiecutter.use_drf == 'y' %}
+# Django Rest Framework
+djangorestframework==3.14.0
+django-cors-headers==4.1.0
+{% endif %}
+
+{% if cookiecutter.use_simple_jwt == 'y' %}
+# JWT
+djangorestframework-simplejwt==5.2.2
+{% endif %}
